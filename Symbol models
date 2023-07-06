@@ -1,0 +1,13 @@
+num = 5
+a = (3 * num) - 2
+for i in range(0,num):
+     for j in range(0,  a):
+         print (end= " ")
+     for j in range(0, i%2):
+          print('$', end= " ")
+
+     for k in range(12, a):
+          print(end = " # ")
+     for l in range(12, a):
+          print(end = " ! ")
+     print(" \n ")
