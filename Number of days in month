@@ -1,0 +1,11 @@
+#predicting the months based on number of total days (28,30,31)
+month1 = int(input('no of days'))
+month2 = ('january' == 31,'february' ==28,'march' ==31,'april' ==30,'may'== 31,'june' ==30,'july' ==31,'august' ==31,'september' ==30,'october' ==31,'november' ==30,'december' ==31)
+if month1 % 31 == 0:
+  print ('january,march,may,july,august,october,december has 31 days')
+elif month1 % 30 == 0:
+    print('april,june,september,november has 30 days')
+elif month1 % 28 == 0:
+    print('month is february')
+else:
+    print('month name not present')
